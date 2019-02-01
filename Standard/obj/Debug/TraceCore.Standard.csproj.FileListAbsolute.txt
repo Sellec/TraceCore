@@ -1,0 +1,17 @@
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Standard\bin\Debug\TraceCore.Standard.dll.config
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Standard\bin\Debug\TraceCore.Standard.dll
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Standard\bin\Debug\TraceCore.Standard.pdb
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Standard\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Standard\bin\Debug\EntityFramework.dll
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Standard\bin\Debug\Newtonsoft.Json.dll
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Standard\bin\Debug\TraceCore.dll
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Standard\bin\Debug\TraceCore.pdb
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Standard\bin\Debug\TraceCore.xml
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Standard\bin\Debug\TraceCore.dll.config
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Standard\obj\Debug\TraceCore.Standard.csprojAssemblyReference.cache
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Standard\obj\Debug\TraceCore.Standard.Properties.Resources.resources
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Standard\obj\Debug\TraceCore.Standard.csproj.GenerateResource.cache
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Standard\obj\Debug\TraceCore.Standard.csproj.CoreCompileInputs.cache
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Standard\obj\Debug\TraceCore.Standard.csproj.CopyComplete
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Standard\obj\Debug\TraceCore.Standard.dll
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Standard\obj\Debug\TraceCore.Standard.pdb

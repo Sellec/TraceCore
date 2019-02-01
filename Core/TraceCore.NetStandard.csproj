@@ -1,0 +1,65 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>TraceCore</RootNamespace>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>TraceEngineCertificateNoPassword.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>false</DelaySign>
+    <AssemblyName>TraceCore</AssemblyName>
+    <Version>1.2.3</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\DebugNetStandard\TraceCore.xml</DocumentationFile>
+    <OutputPath>bin\DebugNetStandard</OutputPath>
+    <NoWarn>1701;1702;0659</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\ReleaseNetStandard\TraceCore.xml</DocumentationFile>
+    <OutputPath>bin\ReleaseNetStandard</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="obj40\**" />
+    <Compile Remove="Resources\**" />
+    <EmbeddedResource Remove="obj40\**" />
+    <EmbeddedResource Remove="Resources\**" />
+    <None Remove="obj40\**" />
+    <None Remove="Resources\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Properties\AssemblyInfo.cs" />
+    <Compile Remove="Properties\Resources.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Properties\Resources.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="app.config" />
+    <None Remove="TraceCore.csproj.vspscc" />
+    <None Remove="TraceCore.NetStandard.csproj.vspscc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
+    <PackageReference Include="System.Reflection.Emit" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>

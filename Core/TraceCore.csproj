@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <BaseIntermediateOutputPath>obj40</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E72E8B9C-9668-46C6-84E6-47D9CE44AD80}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TraceCore</RootNamespace>
+    <AssemblyName>TraceCore</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\DebugNet40\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Debug\TraceCore.xml</DocumentationFile>
+    <NoWarn>CS0659</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\ReleaseNet40\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFrameworkVersion)' == 'v4.0' ">
+    <DefineConstants>$(DefineConstants);NET40</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Architecture\Core\IAppCore.cs" />
+    <Compile Include="Architecture\Core\Modular\AppCore.cs" />
+    <Compile Include="Architecture\Core\Modular\Base\CoreComponentBase.cs" />
+    <Compile Include="Architecture\Core\Modular\Base\CoreComponentState.cs" />
+    <Compile Include="Architecture\Core\Modular\ModuleFactory\DefaultModuleFactory.cs" />
+    <Compile Include="Architecture\Core\Modular\ModuleFactory\ModuleFactoryBase.cs" />
+    <Compile Include="Architecture\Core\Modular\Base\FactorySupportedTypeAttribute.cs" />
+    <Compile Include="Architecture\Core\Modular\ImmediateStartAttribute.cs" />
+    <Compile Include="Architecture\Core\Modular\IModule.cs" />
+    <Compile Include="Architecture\FOM\IObjectManipulator.cs" />
+    <Compile Include="Architecture\InterfaceMapper\InterfaceReflectionAttribute.cs" />
+    <Compile Include="Architecture\InterfaceMapper\MapperBase.cs" />
+    <Compile Include="Architecture\InterfaceMapper\Mapper.cs" />
+    <Compile Include="Architecture\ObjectPool\ObjectPool.cs" />
+    <Compile Include="Architecture\ObjectPool\IPoolObject.cs" />
+    <Compile Include="Architecture\ObjectPool\ProvidersFactoryStartup.cs" />
+    <Compile Include="Architecture\ObjectPool\SingletonBase.cs" />
+    <Compile Include="Architecture\ObjectPool\SingletonBaseStartup.cs" />
+    <Compile Include="Architecture\FOM\IObjectFactory.cs" />
+    <Compile Include="Architecture\FOM\SampleModel\SampleModel.cs" />
+    <Compile Include="Architecture\FOM\SampleModel\SampleObject.cs" />
+    <Compile Include="Architecture\FOM\SampleModel\SampleObjectManipulator.cs" />
+    <Compile Include="Architecture\FOM\SampleModel\SampleObjectFactory.cs" />
+    <Compile Include="Core\Exceptions\HandledException.cs" />
+    <Compile Include="Core\Global.cs" />
+    <Compile Include="Core\Items\IItemBase.cs" />
+    <Compile Include="Core\Items\ItemBaseExtension.cs" />
+    <Compile Include="Core\Reflection\AssemblyNameEqualityComparer.cs" />
+    <Compile Include="Core\Reflection\LibraryEnumerator.cs" />
+    <Compile Include="Core\Reflection\LibraryEnumeratorFactory.cs" />
+    <Compile Include="Core\Types\TupleE.cs" />
+    <Compile Include="Core\Types\TypeHelpers.cs" />
+    <Compile Include="Core\Types\TypesExtensions.cs" />
+    <Compile Include="Core\Utils\ExpressionHelper.cs" />
+    <Compile Include="Core\Utils\ExpressionUtil\BinaryExpressionFingerprint.cs" />
+    <Compile Include="Core\Utils\ExpressionUtil\CachedExpressionCompiler.cs" />
+    <Compile Include="Core\Utils\ExpressionUtil\ConditionalExpressionFingerprint.cs" />
+    <Compile Include="Core\Utils\ExpressionUtil\ConstantExpressionFingerprint.cs" />
+    <Compile Include="Core\Utils\ExpressionUtil\DefaultExpressionFingerprint.cs" />
+    <Compile Include="Core\Utils\ExpressionUtil\ExpressionFingerprint.cs" />
+    <Compile Include="Core\Utils\ExpressionUtil\ExpressionFingerprintChain.cs" />
+    <Compile Include="Core\Utils\ExpressionUtil\FingerprintingExpressionVisitor.cs" />
+    <Compile Include="Core\Utils\ExpressionUtil\HashCodeCombiner.cs" />
+    <Compile Include="Core\Utils\ExpressionUtil\Hoisted.cs" />
+    <Compile Include="Core\Utils\ExpressionUtil\HoistingExpressionVisitor.cs" />
+    <Compile Include="Core\Utils\ExpressionUtil\IndexExpressionFingerprint.cs" />
+    <Compile Include="Core\Utils\ExpressionUtil\LambdaExpressionFingerprint.cs" />
+    <Compile Include="Core\Utils\ExpressionUtil\MemberExpressionFingerprint.cs" />
+    <Compile Include="Core\Utils\ExpressionUtil\MethodCallExpressionFingerprint.cs" />
+    <Compile Include="Core\Utils\ExpressionUtil\ParameterExpressionFingerprint.cs" />
+    <Compile Include="Core\Utils\ExpressionUtil\TypeBinaryExpressionFingerprint.cs" />
+    <Compile Include="Core\Utils\ExpressionUtil\UnaryExpressionFingerprint.cs" />
+    <Compile Include="Core\Utils\JsonContractResolver.cs" />
+    <Compile Include="Core\Utils\PropertyHelper.cs" />
+    <Compile Include="Core\Utils\StringsHelper.cs" />
+    <Compile Include="Core\Utils\TypeHelper.cs" />
+    <Compile Include="Data\Errors\ReadonlyModeExcepton.cs" />
+    <Compile Include="Data\IDBOAccess.cs" />
+    <Compile Include="Data\Providers\DataAccessProvider.cs" />
+    <Compile Include="Data\Providers\ConnectionStringFactory.cs" />
+    <Compile Include="Data\Providers\IConnectionStringProvider.cs" />
+    <Compile Include="Data\Providers\IConnectionStringResolver.cs" />
+    <Compile Include="Data\SQL\SQLFunctions.cs" />
+    <Compile Include="Data\System.ComponentModel.DataAnnotations.Schema\DecimalPrecisionAttribute.cs" />
+    <Compile Include="Data\TransactionsHelper.cs" />
+    <Compile Include="Data\Validation\EntityValidationException.cs" />
+    <Compile Include="Data\Errors\UpdateConcurrencyException.cs" />
+    <Compile Include="Data\Errors\UpdateException.cs" />
+    <Compile Include="Data\Providers\IDataAccessProvider.cs" />
+    <Compile Include="Data\IQuery.cs" />
+    <Compile Include="Data\IDataContext.cs" />
+    <Compile Include="Data\IRepository.cs" />
+    <Compile Include="Data\ItemState.cs" />
+    <Compile Include="Data\ITransactionScope.cs" />
+    <Compile Include="Data\RepositoryAndQueryExtensions.cs" />
+    <Compile Include="Data\IRepositoryEntry.cs" />
+    <Compile Include="Data\UnitOfWork\RepositoryPropertyWrapper.cs" />
+    <Compile Include="Data\UnitOfWork\UnitOfWork.cs" />
+    <Compile Include="Data\UnitOfWork\UnitOfWorkBase.cs" />
+    <Compile Include="Data\Validation\EntityValidationResult.cs" />
+    <Compile Include="Data\Validation\ValidationError.cs" />
+    <Compile Include="ModuleInitializer.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Startup\IStartup.cs" />
+    <Compile Include="Startup\StartupBehaviourAttribute.cs" />
+    <Compile Include="Startup\StartupFactory.cs" />
+    <Compile Include="System\Collections\Concurrent\ExpirationConcurrentDictionary.cs" />
+    <Compile Include="System\Collections\ExpirationDictionaryBase.cs" />
+    <Compile Include="System\Collections\Generic\ExpirationDictionary.cs" />
+    <Compile Include="System\Debug.cs" />
+    <Compile Include="System\Extensions\CustomAttributeExtensions.cs" />
+    <Compile Include="System\Extensions\DateExtension.cs" />
+    <Compile Include="System\Extensions\EnumerableExtension.cs" />
+    <Compile Include="System\Extensions\EnumExtension.cs" />
+    <Compile Include="System\Extensions\ExceptionExtension.cs" />
+    <Compile Include="System\Extensions\ExpirationExtensions.cs" />
+    <Compile Include="System\Extensions\Extension.cs" />
+    <Compile Include="System\Extensions\GenericCollectionsExtension.cs" />
+    <Compile Include="System\Extensions\IsNullOrEmptyExtension.cs" />
+    <Compile Include="System\Extensions\NameValueCollectionExtension.cs" />
+    <Compile Include="System\Extensions\ObjectClonableExtension.cs" />
+    <Compile Include="Core\Items\ConstructorInitializerAttribute.cs" />
+    <Compile Include="System\Extensions\StringExtension.cs" />
+    <Compile Include="System\LazyWithoutExceptionCaching.cs" />
+    <Compile Include="System\MeasureTime.cs" />
+    <Compile Include="System\Range\BaseRange.cs" />
+    <Compile Include="System\Range\DecimalRange.cs" />
+    <Compile Include="System\Range\DateRange.cs" />
+    <Compile Include="System\Range\IRange.cs" />
+    <Compile Include="System\Serializer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tasks\BackgroundServicesFactory.cs" />
+    <Compile Include="Tasks\Cron.cs" />
+    <Compile Include="Tasks\IBackgroundServicesFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FodyWeavers.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\faviconLogo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Fody">
+      <Version>3.2.9</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="ModuleInit.Fody">
+      <Version>1.8.3</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>11.0.2</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

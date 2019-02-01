@@ -1,0 +1,12 @@
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Core\bin\DebugNet40\TraceCore.dll.config
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Core\bin\DebugNet40\TraceCore.dll
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Core\bin\DebugNet40\TraceCore.pdb
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Core\bin\DebugNet40\TraceCore.xml
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Core\bin\DebugNet40\Newtonsoft.Json.dll
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Core\obj40\Debug\TraceCore.csprojAssemblyReference.cache
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Core\obj40\Debug\TraceCore.Properties.Resources.resources
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Core\obj40\Debug\TraceCore.csproj.GenerateResource.cache
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Core\obj40\Debug\TraceCore.csproj.CoreCompileInputs.cache
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Core\obj40\Debug\TraceCore.csproj.CopyComplete
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Core\obj40\Debug\TraceCore.dll
+C:\Users\petrov_d\source\repos\Sellec\TraceCore\Core\obj40\Debug\TraceCore.pdb
